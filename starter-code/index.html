@@ -4,29 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATM Interface</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <!-- Home screen, this screen is for insert card -->
 
     <div id="screen__pin">
-
+        <div class="screenPinContainer">
+            <p></p>
+            <input id ="pass" type="password">
+            <div id="keysContainer">
+                <div class="keys" id="1">1</div>
+                <div class="keys" id="2">2</div>
+                <div class="keys" id="3">3</div>
+                <div class="keys" id="4">4</div>
+                <div class="keys" id="5">5</div>
+                <div class="keys" id="6">6</div>
+                <div class="keys" id="7">7</div>
+                <div class="keys" id="8">8</div>
+                <div class="keys" id="9">9</div>
+                <div class="keys"></div>
+                <div class="keys" id="0">0</div>
+                <div class="keys"></div>
+            </div>
+            <div class="redButton" id="cancle">_____</div>
+            <div class="yellowButton" id="recorrect">_____</div>
+            <div class="greenButton" id="correct">_____</div>
+        </div>
+        <div class="logoContainer"><img src="/img/al-rajhi-bank-vector-logo.png" alt="Alrajhi Bank"></div>
     </div>
     
     <div id="screen__landing">
-
+        <h4 id="time"></h4>
+        <h4 id="date">Wed, 4 March 2020</h4>
+        <div class="landingContainer">
+            <h4>Good Morning <span id="name"></span>, How are you today?</h4>
+            <div id="optionsCon">
+                <div id="num">
+                    <h1 id="money"></h1>
+                    <p>S A R</p>
+                </div>
+                <div id="balance">Balance</div>
+                <div id="withdraw">Withdraw</div>
+                <div id="diposit">Deposit</div>
+            </div>
+        </div>
     </div>
     
     <div id="screen__withdrawal">
-
+        <h2>Withdraw</h2>
+        <h2>SAR <span id="displayBalance"></span></h2>
+        <h5 id="msg"></h5>
+        <div class="screenWContainer">
+            <input id="withdrawInput" type="text">
+            <div id="wKeysContainer">
+                <div class="depoWithdrawK" id="w1">1</div>
+                <div class="depoWithdrawK" id="w2">2</div>
+                <div class="depoWithdrawK" id="w3">3</div>
+                <div class="depoWithdrawK" id="w4">4</div>
+                <div class="depoWithdrawK" id="w5">5</div>
+                <div class="depoWithdrawK" id="w6">6</div>
+                <div class="depoWithdrawK" id="w7">7</div>
+                <div class="depoWithdrawK" id="w8">8</div>
+                <div class="depoWithdrawK" id="w9">9</div>
+                <div class="depoWithdrawK"></div>
+                <div class="depoWithdrawK" id="w0">0</div>
+                <div class="depoWithdrawK"></div>
+            </div>
+        </div>
+        <div class ="goBack" id="withdrawGoBack"></div>
     </div>
 
     <div id="screen__deposit">
-
+        <h2>Deposit</h2>
+        <h2>SAR 1000</h2>
+        <div class="screenDContainer">
+            <input type="text">
+            <div id="wKeysContainer">
+                <div class="depoWithdrawK" id="d1">1</div>
+                <div class="depoWithdrawK" id="d2">2</div>
+                <div class="depoWithdrawK" id="d3">3</div>
+                <div class="depoWithdrawK" id="d4">4</div>
+                <div class="depoWithdrawK" id="d5">5</div>
+                <div class="depoWithdrawK" id="d6">6</div>
+                <div class="depoWithdrawK" id="d7">7</div>
+                <div class="depoWithdrawK" id="d8">8</div>
+                <div class="depoWithdrawK" id="d9">9</div>
+                <div class="depoWithdrawK"></div>
+                <div class="depoWithdrawK" id="d0">0</div>
+                <div class="depoWithdrawK"></div>
+            </div>
+        </div>
+        <div id="check"></div>
     </div>
     <div id="screen__balance">
-
+        <div class="balanceContainer">
+            <h4>Good Morning Ebere, How are you today?</h4>
+            <div id="balanceText">Balance</div>
+            <div id="bOptionsCon">
+                <div id="balanceNum">
+                    <h1 id="money">1000</h1>
+                    <p>SAR</p>
+                </div>
+            </div>
+        </div>
+        <div id="check"></div>
     </div>
-
-    
+<script src="/js/jQuery.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
